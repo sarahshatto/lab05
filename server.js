@@ -15,9 +15,9 @@ app.use(express.static('./public'));
 const PORT = process.env.PORT;
  
 // going to the '/' route and sending the string 'Hello - I like pizza'
-// app.get('/', function (request, response) {
-//   response.send('Hello - I like pizza')
-// })
+app.get('/', function (request, response) {
+  response.send('Hello - I like pizza')
+})
 
 // app.get('/bananas', (request, response) => {
 //   response.send('I am bananas about bananas');
